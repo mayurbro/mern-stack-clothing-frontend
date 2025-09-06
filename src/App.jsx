@@ -13,7 +13,7 @@ import Navbar from "./component/Navbar";
 
 import Footer from "./component/Footer";
 import SearchBar from "./component/SearchBar";
-import VerifyUser from "./pages/VerifyUser";
+// import VerifyUser from "./pages/VerifyUser";
 
 const App = () => {
   return (
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/place-order" element={<PlaceOrder />} />
         <Route path="/orders" element={<Order />} />
-        <Route path="/verify" element={<VerifyUser />}></Route>
+        {/* <Route path="/verify" element={<VerifyUser />}></Route> */}
       </Routes>
       <Footer />
     </div>
