@@ -5,7 +5,7 @@ import axios from "axios";
 import { backendUrl } from "../../../admin/src/App";
 import { toast } from "react-toastify";
 
-const Verify = () => {
+const VerifyUser = () => {
   const { navigate, token, setCartItems } = useContext(ShopContext);
 
   const [searchParams, setSearchParams] = useSearchParams();
@@ -42,4 +42,4 @@ const Verify = () => {
   return <div>Verify</div>;
 };
 
-export default Verify;
+export default VerifyUser;

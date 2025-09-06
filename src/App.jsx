@@ -1,4 +1,5 @@
-import React from "react";
+import { ToastContainer } from "react-toastify";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Collection from "./pages/Collection";
 import About from "./pages/About";
@@ -9,11 +10,10 @@ import Cart from "./pages/Cart";
 import PlaceOrder from "./pages/PlaceOrder";
 import Order from "./pages/Order";
 import Navbar from "./component/Navbar";
-import { Routes, Route } from "react-router-dom";
+
 import Footer from "./component/Footer";
 import SearchBar from "./component/SearchBar";
-import { ToastContainer, toast } from "react-toastify";
-import Verify from "./pages/Verify";
+import VerifyUser from "./pages/VerifyUser";
 
 const App = () => {
   return (
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/place-order" element={<PlaceOrder />} />
         <Route path="/orders" element={<Order />} />
-        <Route path="/verify" element={<Verify />}></Route>
+        <Route path="/verify" element={<VerifyUser />}></Route>
       </Routes>
       <Footer />
     </div>
