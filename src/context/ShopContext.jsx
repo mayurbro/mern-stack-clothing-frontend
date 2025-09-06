@@ -6,7 +6,9 @@ import axios from "axios";
 // import { products } from "../assets/frontend_assets/assets";
 export const ShopContext = createContext();
 const ShopContextProvider = (props) => {
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl =
+    import.meta.env.VITE_BACKEND_URL ||
+    "https://clothing-backend-1kju.onrender.com";
   const currency = "₹";
   const delivery_fees = 50;
   const [search, setSearch] = useState();
